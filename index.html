@@ -1,37 +1,107 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Learn English with Joe Milne</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Learn English with Joe Milne</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header id="header">
-    <img id="header-img" src="https://i.ibb.co/b2CjPh0/image-2023-03-01-152926436.png" alt="Portrait of Joe Milne smiling">
-    <h2 class="spaceleft"><a href="#" class="white">Joe Milne</a></h2>
-    <nav id="navbar">
-      <li><a href="#onlineclasses">Online classes</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </nav>
-  </header>
-  <section id="welcome-section">
-    <h1>Hi, I'm Joe.</h1>
-    <h3>an online English teacher</h3>
+    <header id="header">
+      <img id="header-img" src="https://i.ibb.co/b2CjPh0/image-2023-03-01-152926436.png">
+        <h2 class="spaceleft"><a href="#" class="white">Joe Milne</a></h2>
+        <nav id="nav-bar">
+            <li><a href="#" class="white" nav-link>Home</a></li>
+            <li><a href="#about" class="white nav-link">About</a></li>
+            <li><a href="#classes" class="white nav-link">Online classes</a></li>
+            <li><a href="#contact" class="white nav-link">Contact</a></li>
+        </nav> 
+    </header>
+    <section class="banner-area">
+        <div class="banner-img"></div>
+        <h1>Hi, I'm Joe.</h1>
+        <h3>an online English teacher</h3>
+
+        <!--
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" placeholder="Enter your email" name="email">
+            <input id="submit" type="submit" href="#" class="banner-btn" value="Get me in">
+        </form>
+    -->
+
+        <!-- <a href="#" class="banner-btn">Get me in</a> -->
+
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4u5lhvZC8Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
   </section>
-  <section id="projects">
-    <div class="project-title">
-      <div class="project-1"></div>
-    </div>
-    <div class="project-title">
-      <div class="project-2"></div>
-    </div>
-    <div class="project-title">
-      <div class="project-3"></div>
-    </div>
-  </section>
-  <section id="profiles">
-    <li><a id="profile-link" href="https://github.com/jwhmilne">GitHub</a></li>
-  </section>
+
+<!-- BETTER VIDEO
+  <section id="video">
+        <div class="row">
+            <div class="video-container"></div>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/lJQZa7kQLyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div> 
+    </section>
+    -->
+
+    <section class="about-area" id="about">
+        <h3 class="section-title">About</h3>
+        <ul class="about-content">
+            <li class="about-left"></li>
+            <li class="about-right">
+                <h2>Who is Joe Milne?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ad perspiciatis dolor nemo, eos ullam quod enim corrupti cupiditate veniam beatae alias saepe neque perferendis magnam impedit accusamus, sapiente quia.</p>
+                <a href="" class="about-btn">Learn more</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="services-area" id="services">
+        <h3 class="section-title">
+            Online classes
+        </h3>
+        <ul class="services-content">
+            <li>
+                <i class="fa fa-laptop"></i>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta error amet beatae deserunt, facilis cumque temporibus consectetur accusamus fuga assumenda asperiores. Error vero iure eius quam ea laborum quasi eligendi?</p>
+            </li>
+            <li>
+                <i class="fa fa-signal"></i>
+                <h4>Marketing</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta error amet beatae deserunt, facilis cumque temporibus consectetur accusamus fuga assumenda asperiores. Error vero iure eius quam ea laborum quasi eligendi?</p>
+            </li>
+            <li>
+                <i class="fa fa-picture-o"></i>
+                <h4>Graphics</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta error amet beatae deserunt, facilis cumque temporibus consectetur accusamus fuga assumenda asperiores. Error vero iure eius quam ea laborum quasi eligendi?</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h3 class="section-title">Contact</h3>
+        <ul class="contact-content">
+            <li>
+                <i class="fa fa-map-marker"></i>
+                <p>247 Westwood Lane <br>Blackfen, UK</p>
+            </li>
+            <li>
+                <i class="fa fa-phone"></i>
+                <p>+123 456 789 <br> +789 456 123</p>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>
+                <p>info@dwarvenyak.com <br>yourdomain@website.com</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>All Right Reserved by Your Website</p>
+    </footer>
+
 </body>
+</html>
