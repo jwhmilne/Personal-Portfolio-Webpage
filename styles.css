@@ -239,6 +239,7 @@ ul.about-content {
 .about-left {
   flex-basis: 30%;
   background-image: url(https://avatars.githubusercontent.com/u/109236138?s=400&u=8dec720f1e16f1fe9e248f53840576928c8c6c8d&v=4);
+  border-radius: 200px;
 }
 
 .about-right {
