@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-img {
+#header-img {
 width: 70px;
 height: 70px;
 border-radius: 35px;
 margin-left: 35px;
+filter:brightness(150%);
+filter:contrast(110%);
 }
 
 .background-image {
@@ -20,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Georgia';
 }
 
 ul,nav {
@@ -238,9 +240,29 @@ ul.about-content {
 
 .about-left {
   flex-basis: 30%;
-  background-image: url(https://avatars.githubusercontent.com/u/109236138?s=400&u=8dec720f1e16f1fe9e248f53840576928c8c6c8d&v=4);
-  border-radius: 200px;
+  margin-right: 20px;
 }
+
+#about-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+  min-width: 200px; /* adjust the minimum width as needed */
+  border-radius: 2000px;
+}
+
+@media (max-width: 768px) {
+  #about-img {
+      width: 100%; /* set the width to 100% for smaller screens */
+      margin-bottom: 20px; /* add some margin to create space below the image */
+  }
+  .about-left {
+      margin-right: 0; /* remove the margin for smaller screens */
+  }
+}
+
 
 .about-right {
   flex-basis: 60%;
@@ -285,11 +307,11 @@ ul.about-content {
 
 /*service area*/
 
-#services {
+#classes {
   background: #ddd;
 }
 
-ul.services-content {
+ul.classes-content {
   width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -300,36 +322,36 @@ ul.services-content {
   justify-content: center;
 }
 
-.services-content li {
+.classes-content li {
   padding: 0 30px;
   flex-basis: 33%;
   text-align: center;
 }
 
-.services-content li i {
+.classes-content li i {
   font-size: 50px;
   color: crimson;
   margin-bottom: 25px;
 }
 
-.services content li h4 {
+.classes content li h4 {
   font-size: 20px;
   margin-bottom: 25px;
 }
 
-.services-content li p {
+.classes-content li p {
   margin: 0;
 }
 
 @media (max-width: 1000px) {
-  .services-content li {
+  .classes-content li {
       flex-basis: 100%;
       margin-bottom: 65px;
   }
-  .services-content li:last-child {
+  .classes-content li:last-child {
       margin-bottom: 0;
   }
-  .services-content li p {
+  .classes-content li p {
       padding: 0;
   }
 }
